@@ -1,0 +1,17 @@
+[project]
+name = "fretboard"
+version = "0.1.0"
+description = "Visualise scales and arpeggios on a 6-string guitar fretboard."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
