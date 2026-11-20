@@ -23,7 +23,10 @@ A Python package for visualising a **6-string guitar fretboard**, showing where 
 - `src/fretboard/scales.py` — `SCALE_INTERVALS` table and a frozen `Scale(root, intervals)`
   dataclass; build with `Scale.from_name("A", "major")`.
 - `tests/` — pytest tests, one file per module.
-- `idea.ipynb` — scratch notebook (untracked).
+- `src/fretboard/chords.py` — `CHORD_INTERVALS` table and a frozen `Chord(root, intervals)`
+  dataclass; build with `Chord.from_name("A", "min")` or identify with `Chord.from_notes([...])`.
+- `notebooks/` — Jupyter notebooks; `tour.ipynb` demos the package's features. Keep it
+  runnable top to bottom as the API changes.
 
 Work internally in pitch classes; convert to names only at the edges (input parsing, display).
 

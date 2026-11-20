@@ -34,3 +34,6 @@ class Scale:
     @property
     def notes(self) -> tuple[str, ...]:
         return tuple(note_name(p) for p in self.pitch_classes)
+
+    def __len__(self):
+        return len(self.intervals)
